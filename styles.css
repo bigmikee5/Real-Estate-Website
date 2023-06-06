@@ -435,6 +435,10 @@ h4 {
 }
 
 @media only screen and (max-width: 674px) {
+  .section-1 {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .banner-heading {
     top: 30%;
   }
