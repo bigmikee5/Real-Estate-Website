@@ -159,6 +159,10 @@ h1 {
 .section-3 {
   text-align: center;
 }
+.section-3 h2 a {
+  text-decoration: none;
+  color: #fff;
+}
 .col-div-4 {
   width: 33.3%;
   float: left;
