@@ -16,7 +16,7 @@
         width: 100%;
         height: 100vh;
       }
-      .container {
+      .containerr {
         width: 80%;
         max-width: 700px;
       }
@@ -29,42 +29,53 @@
         flex-wrap: wrap;
         gap: 1rem;
       }
-      img {
+      .containerr img {
         width: 200px;
         height: 200px;
         border-radius: 5px;
       }
-      p {
+      .containerr p {
         margin: 50px 50px 10px 50px;
-      }
-      @media only screen and (max-width: 600px) {
-        .container {
-          width: 80%;
-          max-width: 500px;
-        }
-        .images {
-          width: 440px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-direction: row;
-          flex-wrap: wrap;
-          gap: 1rem;
-        }
-        img {
-          width: 300px;
-          height: 300px;
-          border-radius: 5px;
-        }
-        p {
-          width: 320px;
-          margin: 30px 50px 10px 50px;
-        }
       }
     </style>
   </head>
   <body>
-    <div class="container">
+    <section class="section-1" id="home">
+      <header>
+        <div class="container">
+          <div class="col-div-3">
+            <div class="logo">
+              <img src="../images/logo icon only.png" width="35px" />
+            </div>
+          </div>
+          <div class="col-div-6">
+            <ul class="nav">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#about">About</a></li>
+              <li><a href="../index.html#service">Services</a></li>
+              <li><a href="../index.html#project">Projects</a></li>
+              <li>
+                <a href="./statement.html">Statement</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-div-3">
+            <!-- <button class="get-btn">Get a Quote</button> -->
+            <a href="#" class="menu-icon">&#9776;</a>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+      </header>
+
+      <div class="banner-heading">
+        <h1 class="h1"></h1>
+        <p class="p1"></p>
+        <!-- <button class="learn">Learn More</button> -->
+      </div>
+    </section>
+
+    <div class="containerr">
       <p>
         Are you looking to buy, sell, or invest in properties? Look no further!
         At vividcost Consult Real Estate Services, we offer a comprehensive
@@ -93,5 +104,84 @@
         <div><img src="./RealEstate imgs/six.jpg" /></div>
       </div>
     </div>
+
+    <footer>
+      <div class="container">
+        <div class="col-div-3">
+          <h4>ABOUT US</h4>
+          <h2 class="logo">
+            <img src="../images/logo white.png  " width="35px" />
+          </h2>
+          <p class="foot-p">
+            We are a consortium of God-fearing professional with a keen drive to
+            deliver on the full range of services.
+          </p>
+          <!-- <img src="#" style="margin-left: -10px; margin-top: 10px" /> -->
+        </div>
+        <div class="col-div-3">
+          <h4>NAVIGATION</h4>
+          <ul class="foot-ul">
+            <li><a href="../index.html#about">Who We Are</a></li>
+            <li><a href="../index.html#project">Projects</a></li>
+            <li><a href="../index.html#service">Services</a></li>
+            <li><a href="../index.html#home">Business Home</a></li>
+          </ul>
+        </div>
+        <div class="col-div-3">
+          <h4>SERVICES</h4>
+          <ul class="foot-ul">
+            <li><a href="./construction.html">Construction</a></li>
+            <li><a href="./realEstate.html">real-estate-development</a></li>
+            <li><a href="./facility.html">Facility Management</a></li>
+          </ul>
+        </div>
+
+        <div class="col-div-3">
+          <h4>CONTACT</h4>
+          <ul class="foot-ul" id="contact">
+            <li>
+              <a href="#"
+                ><img src="../images/map.jpg" width="30px" class="fot-icon"
+              /></a>
+              <p>VISIT US <br /><span>33 Akinte Obawole Ogba, Lagos</span></p>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../images/email.webp" width="30px" class="fot-icon"
+              /></a>
+              <p>EMAIL US <br /><span>vividcost@gmail.com</span></p>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../images/call.jpg" width="30px" class="fot-icon"
+              /></a>
+              <p>
+                CALL US <br /><span>08166160170</span> <br /><span
+                  >08036286131</span
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+        <br /><br />
+      </div>
+      <div class="foot-bottom">
+        <p class="bot-p">
+          vividcost Consult Ltd &#169; 2023. All Right Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".menu-icon").click(function () {
+          $(".nav").slideToggle();
+          $(".banner-heading").slideToggle();
+        });
+      });
+    </script>
   </body>
 </html>
