@@ -470,4 +470,7 @@ h4 {
   .section-1 {
     height: 60vh;
   }
+  .hr {
+    display: none;
+  }
 }
