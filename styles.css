@@ -26,9 +26,10 @@ body {
 
 .section-1 {
   background: url(./images/2.jpg);
-  height: 100vh;
-  background-size: contain;
-  background-position: bottom;
+  height: 78vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {
